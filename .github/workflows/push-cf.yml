@@ -31,6 +31,9 @@ jobs:
       - name: Install CF plugin
         run: ibmcloud cf install -f
         shell: bash
+      - name: Target API
+        run: ibmcloud api "$IBM_CLOUD_API"
+        shell: bash
       - name: Target RG
         run: ibmcloud target -g "$IBM_CLOUD_GROUP"
         shell: bash
