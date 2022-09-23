@@ -1,11 +1,11 @@
   applications:
-  - name: djangoapp
+  - name: cloud-capstone
     routes:
-      - route: $HOST.$DOMAIN
+      - route: cloudcapstonefinalbd.us-south.cf.appdomain.cloud
     memory: 128M
     buildpack: python_buildpack
-  - name: djangoapp-nginx
+  - name: cloud-capstone-nginx
     routes:
-      - route: $HOST.$DOMAIN/static
+      - route: cloudcapstonefinalbd.us-south.cf.appdomain.cloud/static
     memory: 128M
     buildpack: staticfile_buildpack
